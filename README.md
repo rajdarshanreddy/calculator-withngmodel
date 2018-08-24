@@ -1,6 +1,8 @@
-# CalculatorWithngModel
+# Calculator With ngModel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+## Demo
+
+https://calculator-withngmodel.firebaseapp.com/
 
 ## Development server
 
