@@ -17,6 +17,7 @@
           <div class="form-group">
             <!-- <label for="exampleFormControlSelect1">Operator</label> -->
             <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]='selectedoperator' required>
+              <option [ngValue]="Operator">Select Operator</option>
               <option>+</option>
               <option>-</option>
               <option>*</option>
