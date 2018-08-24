@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card" style="box-shadow: 1px 1px 8px 0px #888888;">
+        <img class="card-img-top" style="width: 50%;margin: auto;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+          alt="Image">
+        <div class="card-body text-center">
+          <h5 class="card-title">Calculator With ngModel</h5>
+          <p class="card-text">A Simple Calculator Using ngModel.</p>
+        </div>
+        <div class="col-12" ngNativeValidate>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlInput1">Input</label> -->
+            <input type="number" class="form-control" placeholder="Enter Number" [(ngModel)]='primarynumber' required>
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlSelect1">Operator</label> -->
+            <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]='selectedoperator' required>
+              <option>+</option>
+              <option>-</option>
+              <option>*</option>
+              <option>/</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlInput1">Input</label> -->
+            <input type="number" class="form-control" placeholder="Enter Number" [(ngModel)]='secondarynumber' required>
+          </div>
+          <div class="form-group text-center">
+            <label for="exampleFormControlInput1 p-0" class="col-12">
+              <div class="alert alert-primary m-0" role="alert">
+                Result : {{primarynumber}} {{selectedoperator}} {{secondarynumber}} {{result}}
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="card-body text-center pt-0">
+          <button type="button" class="btn btn-primary" (click)="calculate()" type="submit">Calculate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
